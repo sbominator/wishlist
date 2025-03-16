@@ -3,7 +3,6 @@ description: "Request a new feature, improvement, or a wishlist item for SBOMina
 title: "[Feature Request] <Brief summary>"
 labels: ["feature request", "wishlist", "triage"]
 
-
 body:
   - type: markdown
     attributes:
@@ -47,7 +46,7 @@ body:
     validations:
       required: false
 
- - type: dropdown
+  - type: dropdown
     id: related-projects
     attributes:
       label: "📂 Related SBOMinator Projects (Optional)"
