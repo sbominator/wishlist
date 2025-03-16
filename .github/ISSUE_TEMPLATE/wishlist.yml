@@ -52,7 +52,7 @@ body:
     attributes:
       label: "📂 Related SBOMinator Projects"
       description: "Which SBOMinator repository does this request relate to?"
-      multiple: true
+      multiple: false
       options:
         - "SBOMinator CLI (https://github.com/sbominator/cli)"
         - "Scaninator (https://github.com/sbominator/scaninator)"
