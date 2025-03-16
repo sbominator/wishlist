@@ -47,17 +47,18 @@ body:
     validations:
       required: false
 
-  - type: dropdown
+ - type: dropdown
     id: related-projects
     attributes:
-      label: "📂 Related SBOMinator Projects"
-      description: "Which SBOMinator repository does this request relate to?"
+      label: "📂 Related SBOMinator Projects (Optional)"
+      description: "Which SBOMinator repository does this request relate to? (Select all that apply)"
       multiple: true
       options:
         - "SBOMinator CLI (https://github.com/sbominator/cli)"
         - "Scaninator (https://github.com/sbominator/scaninator)"
         - "SBOMinator Lib (https://github.com/sbominator/lib)"
         - "SBOMinator Docs (https://github.com/sbominator/docs)"
+        - "SBOMinator Wishlist (https://github.com/sbominator/wishlist)"
         - "Not sure / Cross-project"
     validations:
       required: false
