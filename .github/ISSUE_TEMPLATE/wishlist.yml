@@ -1,0 +1,84 @@
+name: "💡 Feature Request / Wishlist Item"
+description: "Request a new feature, improvement, or a wishlist item for SBOMinator projects"
+title: "[Feature Request] <Brief summary>"
+labels: ["feature request", "wishlist", "triage"]
+assignees: ""
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Feature Request / Wishlist Item  
+        Thank you for contributing to SBOMinator! Please fill out this form to help us understand your request.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "🔍 Summary"
+      description: "Provide a high-level overview of what this feature or wishlist item is about."
+      placeholder: "Explain the idea in 1-2 sentences."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "🚨 Problem Statement"
+      description: "What problem does this feature or improvement address? Why is it needed?"
+      placeholder: "Describe the issue or limitation this feature will solve."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "✅ Proposed Solution"
+      description: "Describe how this feature could work. If you have specific implementation details, share them here."
+      placeholder: "Provide a potential approach or reference similar implementations."
+    validations:
+      required: false
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: "📌 Use Cases"
+      description: "Who would benefit from this feature? How would they use it?"
+      placeholder: "List relevant use cases or personas that would be impacted."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: related-projects
+    attributes:
+      label: "📂 Related SBOMinator Projects"
+      description: "Which SBOMinator repository does this request relate to?"
+      multiple: true
+      options:
+        - "SBOMinator CLI (https://github.com/sbominator/cli)"
+        - "Scaninator (https://github.com/sbominator/scaninator)"
+        - "SBOMinator Lib (https://github.com/sbominator/lib)"
+        - "SBOMinator Docs (https://github.com/sbominator/docs)"
+        - "Not sure / Cross-project"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "📎 Additional Context / Resources"
+      description: "Include any related documents, external links, or prior discussions."
+      placeholder: "Links to standards, related issues, or research."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: task-list
+    attributes:
+      label: "✅ Next Steps (Optional)"
+      description: "If applicable, break down this request into actionable steps."
+      options:
+        - label: "Research feasibility"
+        - label: "Gather community feedback"
+        - label: "Prototype a proof of concept"
+        - label: "Write documentation"
+        - label: "Implement and test"
