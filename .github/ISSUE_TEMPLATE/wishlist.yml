@@ -2,7 +2,7 @@ name: "💡 Feature Request / Wishlist Item"
 description: "Request a new feature, improvement, or a wishlist item for SBOMinator projects"
 title: "[Feature Request] <Brief summary>"
 labels: ["feature request", "wishlist", "triage"]
-assignees: ""
+
 
 body:
   - type: markdown
